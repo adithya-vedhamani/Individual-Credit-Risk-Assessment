@@ -1,0 +1,172 @@
+.credit-form-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+  }
+  
+  .credit-form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+  }
+  
+  .credit-form-title {
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .credit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group label {
+    color: #4a5568;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .form-group input::placeholder {
+    color: #a0aec0;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  }
+  
+  .form-group select {
+    cursor: pointer;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .submit-button {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 200px;
+  }
+  
+  .submit-button:hover {
+    background-color: #3182ce;
+    transform: translateY(-1px);
+  }
+  
+  .submit-button:active {
+    transform: translateY(0);
+  }
+  
+  .submit-button:disabled {
+    background-color: #cbd5e0;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .submit-button.loading {
+    opacity: 0.8;
+  }
+  
+  .prediction-result {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  
+  .prediction-result h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .prediction-text {
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  
+  .prediction-result.success {
+    background-color: #c6f6d5;
+    color: #276749;
+  }
+  
+  .prediction-result.warning {
+    background-color: #fed7d7;
+    color: #9b2c2c;
+  }
+  
+  .prediction-result.error {
+    background-color: #fed7d7;
+    color: #c53030;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .credit-form-card {
+      padding: 1.5rem;
+    }
+  
+    .credit-form-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .submit-button {
+      width: 100%;
+    }
+  }
+  
+  /* Basic reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f7fafc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+  }
